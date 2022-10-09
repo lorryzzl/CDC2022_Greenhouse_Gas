@@ -1,5 +1,5 @@
 # CDC2022_Greenhouse_Gas
-Carolina Data Challenge 2022 Project: Greenhouse Gas Emission
+Carolina Data Challenge 2022 Project: Greenhouse Gas Emission  
 Author: Tao Huang, Bang Gong, Lorry Zou
 
 ## Presentation Slides:
