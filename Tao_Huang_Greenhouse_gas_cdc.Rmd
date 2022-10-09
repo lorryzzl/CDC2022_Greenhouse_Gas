@@ -1,0 +1,36 @@
+---
+title: "Greenhouse_gas_cdc"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library("tidyverse")
+library("gridExtra")
+library("ggplot2")
+library(rworldmap)
+library(RColorBrewer)
+```
+
+```{r}
+dataSet = read.csv("/Users/tao/Downloads/API_EN/API_EN.ATM.CO2E.PC_DS2_en_csv_v2_4578256.csv")
+dataSet %>% drop_na()
+malMap <- joinCountryData2Map(dataSet, joinCode = "ISO3",
+nameJoinColumn = "Country.Code")
+```
+
+```{r}
+mapCountryData(malMap, nameColumnToPlot="X2019",
+  missingCountryCol = gray(.8), colourPalette = brewer.pal(n = 100, name = 'Oranges'), borderCol = ("black"), mapTitle = "Greenhouse Gas Emissions per Capita", numCats = 100, oceanCol = "lightblue")
+```
+
+```{r}
+dataSet2 = read.csv("/Users/tao/Downloads/annual_csv.csv")
+datam = dataSet2 %>% drop_na() %>% filter(., Year > 1950 & Source == "GCAG")
+```
+
+```{r}
+plot(datam[,2], datam[,3], type='o',lty=3, col='black',lwd=4, main="Annual mean global temperature change relative to previous year",col.main='blue', xlab = "Year", ylab = "Value")
+abline(h = 0, col = "red")
+```
+
