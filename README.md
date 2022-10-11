@@ -1,6 +1,7 @@
 # CDC2022_Greenhouse_Gas
 Honor: First-Place Winner
-Carolina Data Challenge 2022 Project: Greenhouse Gas Emission  
+Carolina Data Challenge 2022 
+Project: Greenhouse Gas Emission  
 Authors: Tao Huang, Bang Gong, Lorry Zou
 
 ## What it does
