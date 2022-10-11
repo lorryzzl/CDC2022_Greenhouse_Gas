@@ -1,6 +1,7 @@
 # CDC2022_Greenhouse_Gas
-Carolina Data Challenge 2022 Project: Greenhouse Gas Emission  
-Authors: Tao Huang, Bang Gong, Lorry Zou
+### Honor: First-Place Winner Carolina Data Challenge 2022 
+### Project: Greenhouse Gas Emisson 
+### Authors: Tao Huang, Bang Gong, Lorry Zou
 
 ## What it does
 We analyzed greenhouse gas emission by the regions' economic status and compared the emissions by advanced economies and developing countries.
